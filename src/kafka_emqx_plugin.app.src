@@ -1,0 +1,15 @@
+{application, kafka_emqx_plugin,
+ [{description, "Another amazing EMQX plugin."},
+  {vsn, "0.1.0"},
+  {modules, []},
+  {registered, [kafka_emqx_plugin_sup]},
+  {applications, [
+      kernel,
+      stdlib,
+      brod
+  ]},
+  {mod, {kafka_emqx_plugin_app, []}},
+  {env, []},
+  {licenses, ["Apache-2.0"]},
+  {maintainers, ["Anonymous <anonymous@example.org>"]}
+ ]}.
